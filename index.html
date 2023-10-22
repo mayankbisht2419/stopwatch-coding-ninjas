@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stly.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-child"> 
+
+                <div class="one-block">
+                    <div class="time-block">
+                        <div class="time-box">
+                            <div class="display-time">
+                                <p id="Hours">00</p>
+                            </div>
+                        </div>
+                        <div class="time-unit"><p >:</p></div>
+                    </div>
+                    <div class="manage-button" ><button id="stop" onclick="stopWatch()">Stop</button></div>
+                </div>
+
+                <div class="one-block">
+                    <div class="time-block">
+                        <div class="time-box">
+                            <div class="display-time">
+                                <p id="seconds">00</p>
+                            </div>
+                        </div>
+                        <div class="time-unit"><p >:</p></div>
+                    </div>
+                    <div class="manage-button" ><button id="start" onclick="startWatch()">start</button></div>
+                </div>
+                
+                <div class="one-block">
+                    <div class="time-block">
+                        <div class="time-box">
+                            <div class="display-time">
+                                <p id="milliseconds">00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manage-button" ><button id="reset" onclick="resetWatch()">Reset</button></div>
+                </div>
+                
+            </div>
+            <script src="stopwatch.js"></script>
+            
+        </div>
+    </body>
+</html>
