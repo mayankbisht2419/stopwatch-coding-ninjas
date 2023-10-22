@@ -1,9 +1,9 @@
 // variables for number values
-var hr=0;
+var min=0;
 var sec=0;
 var miliseconds=0;
 // values for displaying as html
-var hrString="00";
+var minString="00";
 var secString="00";
 var milisecondsString="00";
 // out interval
@@ -23,9 +23,9 @@ function startWatch() {
             miliseconds=0;
             sec++;
         }
-        // inc hr if sec has reached 60
+        // inc min if sec has reached 60
         if(sec>59){
-            hr++;
+            min++;
             sec=0;
         }
         if(miliseconds<10){
@@ -38,12 +38,12 @@ function startWatch() {
         }else{
             secString=sec;
         }
-        if(hr<10){
-            hrString="0" + hr;
+        if(min<10){
+            minString="0" + min;
         }else{
-            hrString=hr;
+            minString=min;
         }
-        document.getElementById("Hours").innerHTML=hrString;
+        document.getElementById("mins").innerHTML=minString;
         document.getElementById("seconds").innerHTML=secString;
         document.getElementById("milliseconds").innerHTML=milisecondsString;
 
@@ -53,9 +53,8 @@ function startWatch() {
 function resetWatch() {
     console.log("resetWatch");
     clearInterval(interval);
-    hr=0,sec=0,miliseconds=0;
-    document.getElementById("Hours").innerHTML="00";
+    min=0,sec=0,miliseconds=0;
+    document.getElementById("mins").innerHTML="00";
     document.getElementById("seconds").innerHTML="00";
     document.getElementById("milliseconds").innerHTML="00";
 }
-
