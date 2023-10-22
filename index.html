@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- style sheet for the css of this stop watch -->
         <link rel="stylesheet" href="stly.css">
     </head>
     <body>
+        
         <div class="container">
             <div class="header-child"> 
-
+                <!-- one block contains time thing like Hr , sec and ms and buttons -->
+                <!-- Hr section -->
                 <div class="one-block">
                     <div class="time-block">
                         <div class="time-box">
@@ -18,7 +21,7 @@
                     </div>
                     <div class="manage-button" ><button id="stop" onclick="stopWatch()">Stop</button></div>
                 </div>
-
+                <!-- sec section -->
                 <div class="one-block">
                     <div class="time-block">
                         <div class="time-box">
@@ -30,7 +33,7 @@
                     </div>
                     <div class="manage-button" ><button id="start" onclick="startWatch()">start</button></div>
                 </div>
-                
+                <!-- millisecond section -->
                 <div class="one-block">
                     <div class="time-block">
                         <div class="time-box">
@@ -43,6 +46,7 @@
                 </div>
                 
             </div>
+            <!-- java script code that is links js functions -->
             <script src="stopwatch.js"></script>
             
         </div>
