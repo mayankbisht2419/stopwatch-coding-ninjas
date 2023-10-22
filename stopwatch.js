@@ -1,9 +1,12 @@
+// variables for number values
 var hr=0;
 var sec=0;
 var miliseconds=0;
+// values for displaying as html
 var hrString="00";
 var secString="00";
 var milisecondsString="00";
+// out interval
 var interval;
 function stopWatch() {
     console.log("stopCalled");
@@ -12,13 +15,15 @@ function stopWatch() {
 
 function startWatch() {
     console.log("startWatch");
+    // interval for every 10ms
     interval = setInterval(function() {
-        // Calculate the elapsed time since the stopwatch was started.
+        // inc sec if ms has reached 100
         miliseconds++;
         if(miliseconds>99){
             miliseconds=0;
             sec++;
         }
+        // inc hr if sec has reached 60
         if(sec>59){
             hr++;
             sec=0;
